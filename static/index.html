@@ -145,9 +145,9 @@ function addEntity(entity, data) {
     drawNextFrame(); // (but should we?)
     //window.location.host
     //XXX: Send a XHTML Request that updates the entity you just  modified!
+    function callback(){}
     var newUrl = 'http://' + host + '/entity' + entity;
-    sendJSONXMLHTTPRequest(newUrl, data, function(){})
-    //check what call back is 
+    sendJSONXMLHTTPRequest(newUrl, data, callback);
 
 }
 
